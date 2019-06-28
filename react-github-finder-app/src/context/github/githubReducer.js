@@ -2,7 +2,7 @@ import {
   SEARCH_USERS,
   SET_LOADING,
   CLEAR_USERS,
-  GET_USERS,
+//   GET_USERS,
   GET_USER,
   GET_REPOS,
   SET_USERS
@@ -10,18 +10,18 @@ import {
 
 export default (state, action) => {
   switch (action.type) {
-      case GET_REPOS:
-          return{
-              ...state,
-              repos: action.payload,
-              loading: false
-          }
-      case GET_USER:
-          return{
-              ...state,
-              user: action.payload,
-              loading: false
-          }
+    case GET_REPOS:
+      return {
+        ...state,
+        repos: action.payload,
+        loading: false
+      };
+    case GET_USER:
+      return {
+        ...state,
+        user: action.payload,
+        loading: false
+      };
     case CLEAR_USERS:
       return {
         ...state,
