@@ -2,9 +2,9 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
-  --dark-color: #333333;
-  --light-color: #f4f4f4;
+  --primary-color: #e87261;
+  --dark-color: #a2c4c0;
+  --light-color: #D0CFCD;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -19,8 +19,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  background-color: rgb(255, 255, 255);
+  color: #142B38;
 }
 
 a {
@@ -114,6 +114,8 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  min-width: 100%;
+  border-radius: 10px;
 }
 
 /* List */
@@ -197,7 +199,7 @@ img {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
   background: var(--light-color);
   color: #333;
   padding: 0.4rem 1.3rem;
@@ -207,6 +209,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  border-radius: 25px;
 }
 
 .btn-link {
@@ -329,6 +332,7 @@ textarea {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 input[type='submit'],
@@ -399,6 +403,14 @@ table th {
 
   .lead {
     font-size: 1rem;
+  }
+  .searchName {
+    font-size: 0.9rem;
+  }
+
+  /* container */
+  .container {
+    padding: 0 0.5rem;
   }
 
   /* Navbar */
